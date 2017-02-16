@@ -1,0 +1,21 @@
+{
+  "name": "hyperrabbit",
+  "version": "0.1.0",
+  "description": "Specially made for EvilRabbit",
+  "main": "dist.js",
+  "author": "Tim Neutkens",
+  "license": "MIT",
+  "scripts": {
+    "build": "babel index.js > dist.js",
+    "prepublish": "npm run build"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.23.0",
+    "babel-core": "^6.23.1",
+    "babel-preset-es2015": "^6.22.0",
+    "babel-preset-react": "^6.23.0"
+  },
+  "babel": {
+    "presets": ["es2015", "react"]
+  }
+}
